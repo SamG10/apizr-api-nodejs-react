@@ -50,12 +50,12 @@ const Home = () => {
         })()
       }, [setData])
 
-        // Form
+  // Form
   const [input, setInput] = useState('');
 
   function Results() {
     if (input === '') {
-      return <div className="description">Veuillez saisir une valeur pour afficher la qualité de l'eau</div>;
+      return <div className="water-quality">Veuillez saisir une valeur pour afficher la qualité de l'eau</div>;
     } else if (input < 50) {
         return <img src={bad} alt="" className="water-quality"  />;
       } else if (input < 90) {
@@ -66,16 +66,19 @@ const Home = () => {
 
   return <>
   <section className="section-top">
-    <h3 className="text-center mt-5">Qualité de l'eau de Lacanau aujourd'hui</h3>
-  <div>
-    <form action="" className="col-4 d-flex">
-      <label htmlFor="value" className="form-label col-4">Saisir une valeur :</label>
-      <input type="number" min="0" max="100" className="form-control" value={input} onChange={e => setInput(e.target.value)} />
-    </form>
-  </div>
-    <div>
-      <Results />
+    <h3 className="text-center mt-5 mb-5">Qualité de l'eau de Lacanau aujourd'hui</h3>
+    <div className="global">
+      <div className="">
+        <form action="" className="d-flex">
+          <label htmlFor="value" className="form-label col-5">Saisir une valeur :</label>
+          <input type="number" min="0" max="100" className="form-control" value={input} onChange={e => setInput(e.target.value)} />
+        </form>
+      </div>
+      <div>
+        <Results />
+      </div>
     </div>
+  
   </section>
 
   <section className="section2">

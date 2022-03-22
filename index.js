@@ -1,9 +1,9 @@
 const express = require('express');
+var cors = require('cors');
 const app = express();
 const eaux = require('./data.json');
 const mysql = require('mysql');
 const port = 8080;
-var cors = require('cors');
 
 // MIDDLEWARE
 app.use(express.json());
@@ -22,7 +22,6 @@ app.get('/eaux/:id', (req,res) => {
 
     // Database
 app.get('/database', (req, res) => {
-
     const db = mysql.createConnection({
         host: "localhost",
         port: 3308,
@@ -35,7 +34,7 @@ app.get('/database', (req, res) => {
     db.connect(function(err) {
         if (err) throw err
         console.log("Connecté à la base de données MySQL!")
-
+    
         db.query("SELECT * FROM ville", function (err, result) {
             if (err) throw err
             console.log(result)
