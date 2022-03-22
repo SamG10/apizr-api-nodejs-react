@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "beach":"Hourtin ocean",
+        "water":"eau polluée",
+        "city": "Hourtin"
+    },
+    {
+        "id": 2,
+        "beach":"Belisaire",
+        "water":"eau très propre",
+        "city": "Lège-cap-Ferret"
+    },
+    {
+        "id": 3,
+        "beach":"Baignade amménagée d'arès",
+        "water":"eau très propre",
+        "city": "Arès"
+    },
+    {
+        "id": 4,
+        "beach":"Le Betey",
+        "water":"eau propre",
+        "city": "Andernos-les-Bains"
+    },
+    {
+        "id": 5,
+        "beach":"Jetee thiers",
+        "water":"eau propre",
+        "city": "Arcachon"
+    }
+]

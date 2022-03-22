@@ -1,0 +1,49 @@
+.section-top {
+    height: 80vh;
+}
+
+.section-top form {
+    position: absolute;
+    top: 50%;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.water-quality {
+    position: absolute;
+    width: 500px;
+    top: 35%;
+    right: 10%;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+    .water-quality {
+        width: 300px;
+        top: 40%;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .water-quality {
+        width: 350px;
+        top: 50%;
+        right: 25%;
+    }
+    .section-top form {
+        position: absolute;
+        top: 30%;
+        right: 35%;
+    }
+    .description {
+        top: 50%;
+        right: 20%;
+    }
+}
