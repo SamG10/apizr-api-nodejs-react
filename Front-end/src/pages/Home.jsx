@@ -83,7 +83,7 @@ const Home = () => {
     <table className="table table-striped w-100 mb-5">
       <thead>
         <tr>
-          <th>Plages</th>
+          <th>Plage</th>
           <th>Ville</th>
           <th>Qualité de l'eau</th>
         </tr>
@@ -99,7 +99,7 @@ const Home = () => {
     <table className="table table-striped w-100 mb-5">
       <thead>
         <tr>
-          <th>Plages</th>
+          <th>Plage</th>
           <th>Ville</th>
           <th>Qualité de l'eau</th>
         </tr>
@@ -115,7 +115,7 @@ const Home = () => {
     <table className="table table-striped w-100 mb-5">
       <thead>
         <tr>
-          <th>Plages</th>
+          <th>Plage</th>
           <th>Ville</th>
           <th>Qualité de l'eau</th>
         </tr>

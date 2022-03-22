@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
 const eaux = require('./data.json');
-const port = 8080;
 const mysql = require('mysql');
+const port = 8080;
 var cors = require('cors');
-
 
 // MIDDLEWARE
 app.use(express.json());
@@ -23,6 +22,7 @@ app.get('/eaux/:id', (req,res) => {
 
     // Database
 app.get('/database', (req, res) => {
+
     const db = mysql.createConnection({
         host: "localhost",
         port: 3308,
@@ -31,7 +31,6 @@ app.get('/database', (req, res) => {
         database : "pollution",
         insecureAuth : true
     });
-
 
     db.connect(function(err) {
         if (err) throw err
